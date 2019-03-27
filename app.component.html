@@ -1,0 +1,45 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<body>
+<div>
+  <table>
+    <tr>
+        <td>
+            <img src="assets/capitalone.png" style="width:100px; height:100px"/>
+          </td>
+          <td>
+              <tr>
+                <td>       
+                  <label>Field Name : </label>
+                </td>
+                <td>
+                  <input type="text"/>
+                </td>
+              </tr>
+              <tr>   
+                <td>
+                  <label>Sample : </label>
+                </td>
+                <td>
+                  <input type="text" id="sampleText"/>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>
+                  <button  style="width:100px" (click)="handleValue()">New</button>
+                </td>
+              </tr>
+            </td>
+            <td>
+              <input id="coordinates" type="text" style="height:100px;width:100px;text-align: center" />
+            </td>
+    </tr>
+  </table>
+  <div id="pdfArea" class="dragAndDropZone" (click)="setPosition($event)"  (mousemove)="handlePosition($event)">
+    <button id="pdfText" ></button>
+  </div>
+  
+
+</div>
+</body>
+<router-outlet></router-outlet>
